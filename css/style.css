@@ -64,6 +64,10 @@ html {
         font-size: 0.8em;
     }
     
+    .profile {
+        margin-top: -87.5px;
+    }
+    
     .profile .profile-image {
         width: 175px;
     }
