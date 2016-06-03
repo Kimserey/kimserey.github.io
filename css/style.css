@@ -38,7 +38,7 @@ html {
     .profile .profile-image {
         width: 100%;
         max-width: 250px;
-        border-radius: 250px;
+        border-radius: 50%;
         display: block;
         margin: 0 auto;
         border: 5px solid white;
@@ -60,6 +60,14 @@ html {
 }
 
 @media (max-width: 719px) {
+    html {
+        font-size: 0.8em;
+    }
+    
+    .profile .profile-image {
+        width: 175px;
+    }
+    
     .profile .profile-links {
         width: 352px;
     }
