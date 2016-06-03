@@ -1,5 +1,22 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 719px) and (min-width: 480px) {
+    html {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 479px) {
+    html {
+        font-size: 0.7em;
+    }
 }
 
 .top {
@@ -11,7 +28,7 @@ html {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -125px;
+    margin-top: -10em;
 }
 
     .profile ul {
@@ -36,7 +53,7 @@ html {
             }
 
     .profile .profile-image {
-        width: 100%;
+        width: 20em;
         max-width: 250px;
         border-radius: 50%;
         display: block;
@@ -50,29 +67,5 @@ html {
     
 .profile .profile-links {
     margin: 0 auto;
-    width: 492px;
-}
-    
-@media (max-width: 1000px) and (min-width: 720px) {
-    .profile .profile-links {
-        width: 50%;
-    }
-}
-
-@media (max-width: 719px) {
-    html {
-        font-size: 0.8em;
-    }
-    
-    .profile {
-        margin-top: -87.5px;
-    }
-    
-    .profile .profile-image {
-        width: 175px;
-    }
-    
-    .profile .profile-links {
-        width: 352px;
-    }
+    width: 30em;
 }
