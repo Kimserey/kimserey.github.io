@@ -72,47 +72,23 @@ html {
 
 .contact-button {
     position: absolute;
-    bottom: 1em;
-    right: 1em;
-    height: 1em;
-    width: 1em;
-    border-radius: 50%;
-    padding: 0.35em;
+    bottom: 1.5em;
+    right: 1.5em;
+    padding: 0.2em 0.6em;
+    font-family: 'Kaushan script', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background: #2196f3;
+    border-radius: 0.2em;
     cursor: pointer;
+    text-decoration: none;
     -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.4);
     box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.4);
-    color: white;
-    background: #2196f3;
-    font-size: 2em;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
 }
-
-.contact-button:hover {
-    -webkit-transition: 0.8s;
-    -moz-transition: 0.8s;
-    transition: 0.8s;
-    background: #176BAD;
-}
-    
-.contact-message {
-    position: absolute;
-    bottom: 3em;
-    right: 4em;
-    font-size: 1.5em;
-    font-family: 'Kaushan script', sans-serif;
-    color: #2196f3;
-}
-
-@media (max-height: 500px) {
-    .contact-button {
-        position: inherit;
-        float: right;
-        margin: 2.5em 1em 0 0;
+    .contact-button:hover {
+        background: #176BAD;
     }
-    
-    .contact-message {
-        position: inherit;
-        float: right;
-        margin-top: 2.5em;
-    }
-}
