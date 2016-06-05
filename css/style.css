@@ -49,7 +49,7 @@ html {
             }
             
             .profile ul li a:hover {
-                border-bottom: 2px solid red;
+                border-bottom: 0.2em solid #2196f3;
             }
 
     .profile .profile-image {
