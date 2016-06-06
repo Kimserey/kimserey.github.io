@@ -19,16 +19,9 @@ html {
     }
 }
 
-.top {
-    background-image: url("../img/bg.jpg");
-    height: 25%;
-}
-
 .profile {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10em;
+    margin: 5em auto;
 }
 
     .profile ul {
@@ -53,12 +46,11 @@ html {
             }
 
     .profile .profile-image {
-        width: 20em;
+        width: 15em;
         max-width: 250px;
         border-radius: 50%;
         display: block;
-        margin: 0 auto;
-        border: 5px solid white;
+        margin: 2em auto;
     }
 
     .profile .profile-text {
@@ -92,3 +84,9 @@ html {
     .contact-button:hover {
         background: #176BAD;
     }
+    
+ .breaker {
+    width: 25em;
+    border-bottom: 0.2em solid #2196f3;
+    margin: 0 auto;
+ }
