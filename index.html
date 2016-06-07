@@ -9,7 +9,7 @@
         <div class="profile">
             <div class="profile-text">
                 <h1>Kimserey Lam</h1>
-                <div class="breaker"></div>
+                <div id="breaker" class="breaker"></div>
                 <p>Developer, dreamer, creator, blogger - I make software.</p>
             </div>
             <img class="profile-image" src="img/me.png" alt="me">
@@ -23,5 +23,14 @@
             </div>
         </div>
         <a class="contact-button" href="mailto:info@kimsereylam.com"><i class="fa fa-envelope-o"></i>&nbsp; Hey! Feel free to email me</a>
+
+        <script>
+            (function () {
+                var setBreakerWidth = function(width) { document.getElementById("breaker").style.width = width; }
+
+                setTimeout(function() { setBreakerWidth("30em"); }, 500);
+                setTimeout(function() { setBreakerWidth("15em"); }, 1500);
+            })();
+        </script>
     </body>
 </html>

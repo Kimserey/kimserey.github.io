@@ -86,7 +86,12 @@ html {
     }
     
  .breaker {
-    width: 25em;
+    width: 0;
     border-bottom: 0.2em solid #2196f3;
     margin: 0 auto;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
  }
