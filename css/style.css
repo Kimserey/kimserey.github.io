@@ -47,6 +47,7 @@ html {
 
     .profile .profile-image {
         width: 15em;
+        height: 15em;
         max-width: 250px;
         border-radius: 50%;
         display: block;
