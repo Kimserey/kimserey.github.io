@@ -7,18 +7,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 719px) and (min-width: 480px) {
-    html {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    html {
-        font-size: 0.8em;
-    }
-}
-
 .banner {
     background-color: #092b47;
     height: 30em;
@@ -46,8 +34,8 @@ html {
 
 .profile ul li {
     text-align: center;
-    float: left;
-    width: 25%;
+    width: 100%;
+    margin: 2em 0;
 }
 
 .profile ul li a {
@@ -75,7 +63,6 @@ html {
 
 .profile .profile-links {
     margin: 0 auto;
-    width: 30em;
 }
 
 .footer {
