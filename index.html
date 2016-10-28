@@ -23,7 +23,7 @@
             </ul>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <span class="footer-text" id="footerText"></span>
     </div>
 
@@ -44,9 +44,8 @@
         var message = messages[Math.floor(Math.random() * messages.length)];
 
         document.addEventListener("DOMContentLoaded", function(event) {
-            var elt = document.getElementById("footerText");
-            elt.textContent = message;
-            elt.addEventListener("click", function(ev) {
+            document.getElementById("footerText").textContent = message;
+            document.getElementById("footer").addEventListener("click", function(ev) {
                 location.reload();
             });
         });
