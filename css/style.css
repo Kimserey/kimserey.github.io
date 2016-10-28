@@ -41,6 +41,7 @@ html {
 .profile ul li a {
     color: #092b47;
     text-decoration: none;
+    font-size: xx-large;
 }
 
 .profile ul li a:hover {
