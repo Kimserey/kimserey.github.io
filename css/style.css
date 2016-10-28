@@ -51,12 +51,13 @@ html {
 }
 
 .profile ul li a {
-    color: black;
+    color: #092b47;
     text-decoration: none;
 }
 
 .profile ul li a:hover {
-    border-bottom: 0.2em solid #2196f3;
+    border-top: .5em solid #092b47;
+    border-bottom: .5em solid #092b47;
 }
 
 .profile .profile-image {
@@ -77,37 +78,19 @@ html {
     width: 30em;
 }
 
-.contact-button {
-    position: absolute;
-    bottom: 1.5em;
-    right: 1.5em;
-    padding: 0.2em 0.6em;
-    font-family: 'Kaushan script', sans-serif;
-    font-size: 1.5em;
+.footer {
+    background-color: #092b47;
     color: white;
-    background: #2196f3;
-    border-radius: 0.2em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
     cursor: pointer;
-    text-decoration: none;
-    -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.4);
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    transition: 0.4s;
+    font-weight: bold;
 }
 
-.contact-button:hover {
-    background: #176BAD;
-}
-
-.breaker {
-    width: 0;
-    border-bottom: 0.2em solid #2196f3;
-    margin: 0 auto;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+.footer-text {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
