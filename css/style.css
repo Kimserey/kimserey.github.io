@@ -5,7 +5,6 @@ body {
 
 html {
     font-family: 'Roboto', sans-serif;
-    min-height: 1000px;
 }
 
 .banner {
@@ -72,9 +71,20 @@ html {
     color: white;
     position: absolute;
     width: 100%;
-    bottom: 0;
     cursor: pointer;
     font-weight: bold;
+}
+
+@media (max-height: 1000px) {
+    .footer {
+        top: 1000px;
+    }
+}
+
+@media (min-height: 1001px) {
+    .footer {
+        bottom: 0;
+    }
 }
 
 .footer-text {
