@@ -89,6 +89,37 @@
             width: 80%;
             margin: 0 10%;
         }
+        
+        .feature-container {
+            padding: 5% 10%;
+            position: relative;
+        }
+        
+        .feature-container-odd {
+            padding: 5% 10%;
+            position: relative;
+            background: hsl(207, 100%, 86%);
+        }
+        
+        .feature-container-image-left {
+            width: 30%;
+            position: relative;
+        }
+        
+        .feature-image-1 {
+            width: 100%;
+        }
+        
+        .feature-image-2 {
+            width: 100%;
+            position: absolute;
+            top: 15%;
+            right: -15%;
+        }
+        
+        .footer {
+            margin: .1em auto;
+        }
     </style>
 </head>
 
@@ -108,7 +139,7 @@
             <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
             <div class="banner-subtext">
                 <i class="fa fa-usd fa-2x"></i>
-                <span>ave money with</span> <strong>BASKEE</strong>
+                <span>ave money with</span> <strong>BASKEEgit </strong>
             </div>
             <div>
                 <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=de&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -118,41 +149,61 @@
         </div>
     </div>
 
-    <div>
-        <img src="img/baskee/store_list_phone.png " />
-        <h2>Save all your favorite shops prices</h2>
-        <p>
+    <div class="feature-container">
+        <div class="feature-container-image-left">
+            <img class="feature-image-1" src=" img/baskee/store_list_phone.png" />
+        </div>
+        <div style="border-bottom: .5em solid black; ">
+            <h2>Save all your favorite shops prices</h2>
+            <p>
 
-        </p>
+            </p>
+        </div>
     </div>
 
-    <div>
-        <img src="img/baskee/article_list_1_phone.png " />
-        <img src="img/baskee/article_list_2_phone.png " />
+    <div class="feature-container-odd">
+        <div class="feature-container-image-left">
+            <img class="feature-image-1" src="img/baskee/article_list_1_phone.png " />
+            <img class="feature-image-2" src="img/baskee/article_list_2_phone.png " />
+        </div>
         <h2>Analyse articles prices</h2>
         <p>
 
         </p>
     </div>
 
-    <div>
-        <img src="img/baskee/lookup_phone.png " />
+    <div class="feature-container">
+        <div class="feature-container-image-left">
+            <img class="feature-image-1" src="img/baskee/lookup_phone.png " />
+        </div>
         <h2>All your previous purchase at your fingertips</h2>
         <p>
 
         </p>
     </div>
 
-    <div>
-        <img src="img/baskee/history_1_phone.png " />
-        <img src="img/baskee/history_2_phone.png " />
+    <div class="feature-container-odd">
+        <div class="feature-container-image-left">
+            <img class="feature-image-1" src="img/baskee/history_1_phone.png " />
+            <img class="feature-image-2" src="img/baskee/history_2_phone.png " />
+        </div>
         <h2>Track your expenses</h2>
         <p>
 
         </p>
     </div>
 
-    <div style="margin: 1em; "><i class="fa fa-code "></i> with <i class="fa fa-heart "></i> by <img src="img/me.png " style="width:2em;position: relative; top: .5em;border-radius: 50%; " /> - <a href="https://kimsereylam.com ">https://kimsereylam.com</a></div>
+    <div class="footer">
+
+        <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
+        <div>
+            <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=de&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
+            </a>
+        </div>
+        <div>
+        <i class="fa fa-code "></i> with <i class="fa fa-heart "></i> by <img src="img/me.png " style="width:2em;position: relative; top: .5em;border-radius: 50%; " /></div>
+        <a href="https://kimsereylam.com ">https://kimsereylam.com</a></div>
 </body>
 
 </html>
