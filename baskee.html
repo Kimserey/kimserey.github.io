@@ -6,32 +6,120 @@
     <link rel="shortcut icon" type="image/png" href="img/baskee/favicon.png" />
     <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
-    <link rel="stylesheet" href="css/style.css">
 
     <style>
-        img {
-            width: 20em;
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .header {
+            background-color: #2196f3;
+            position: relative;
+            width: 100%;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 0;
+        }
+        
+        .features-link {
+            position: absolute;
+            right: 0;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 60vw;
+            background-color: #2196f3;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner-photo-1 {
+            width: 30%;
+            position: absolute;
+            left: -5%;
+            top: 45%;
+        }
+        
+        .banner-photo-2 {
+            width: 30%;
+            position: absolute;
+            left: 2.5%;
+            top: 35%;
+        }
+        
+        .banner-photo-3 {
+            width: 30%;
+            position: absolute;
+            left: 10%;
+            top: 25%;
+        }
+        
+        .banner-photo-4 {
+            width: 30%;
+            position: absolute;
+            left: 15%;
+            top: 15%;
+        }
+        
+        .banner-text {
+            color: white;
+            position: absolute;
+            right: 0;
+            top: 15%;
+            width: 50%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+        
+        .banner-subtext {
+            font-size: xx-large;
+            text-align: center;
+            margin: 1em 0;
+        }
+        
+        .google-play-btn {
+            width: 80%;
+            margin: 0 10%;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <img src="img/baskee/baskee_logo_v3.png" />
-        <a>Features</a>
-        <h1>Save money with Baskee!</h1>
+    <div class="header">
+        <img src="img/baskee/baskee_logo_v3.png" class="logo" />
+        <a class="features-link">Features</a>
+    </div>
+    <div class="banner">
 
-        <br> Optimize your grocery shoppings
-        <br> Analyse article prices
-        <br> Track your expenses
+        <img class="banner-photo-1" src="img/baskee/history_1_phone.png" />
+        <img class="banner-photo-2" src="img/baskee/lookup_phone.png" />
+        <img class="banner-photo-3" src="img/baskee/article_list_2_phone.png" />
+        <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
 
-        <div>
-            Download now
+        <div class="banner-text">
+            <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
+            <div class="banner-subtext">
+                <i class="fa fa-usd fa-2x"></i>
+                <span>ave money with</span> <strong>BASKEE</strong>
+            </div>
+            <div>
+                <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=de&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
+                </a>
+            </div>
         </div>
     </div>
 
     <div>
-        <img src="img/baskee/store_list_phone.png" />
+        <img src="img/baskee/store_list_phone.png " />
         <h2>Save all your favorite shops prices</h2>
         <p>
 
@@ -39,8 +127,8 @@
     </div>
 
     <div>
-        <img src="img/baskee/article_list_1_phone.png" />
-        <img src="img/baskee/article_list_2_phone.png" />
+        <img src="img/baskee/article_list_1_phone.png " />
+        <img src="img/baskee/article_list_2_phone.png " />
         <h2>Analyse articles prices</h2>
         <p>
 
@@ -48,7 +136,7 @@
     </div>
 
     <div>
-        <img src="img/baskee/lookup_phone.png" />
+        <img src="img/baskee/lookup_phone.png " />
         <h2>All your previous purchase at your fingertips</h2>
         <p>
 
@@ -56,15 +144,15 @@
     </div>
 
     <div>
-        <img src="img/baskee/history_1_phone.png" />
-        <img src="img/baskee/history_2_phone.png" />
-        <h2>Track your expeses</h2>
+        <img src="img/baskee/history_1_phone.png " />
+        <img src="img/baskee/history_2_phone.png " />
+        <h2>Track your expenses</h2>
         <p>
 
         </p>
     </div>
 
-    <div style="margin: 1em;"><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <img src="img/me.png" style="width:2em;position: relative; top: .5em;border-radius: 50%;" /> - <a href="https://kimsereylam.com">https://kimsereylam.com</a></div>
+    <div style="margin: 1em; "><i class="fa fa-code "></i> with <i class="fa fa-heart "></i> by <img src="img/me.png " style="width:2em;position: relative; top: .5em;border-radius: 50%; " /> - <a href="https://kimsereylam.com ">https://kimsereylam.com</a></div>
 </body>
 
 </html>
