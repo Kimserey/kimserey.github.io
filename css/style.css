@@ -13,8 +13,8 @@ html {
 }
 
 .banner-image {
-    height: 30em;
-    width: 30em;
+    width: 100%;
+    max-width: 30em;
     margin: 0 auto;
     display: block;
 }
