@@ -152,33 +152,33 @@
             margin: 0 10%;
         }
         
-        .feature-container {
-            position: relative;
-            height: 30em;
-            margin: 1em;
-        }
-        
         .feature-bg {
-            width: 100%;
-            height: 100%;
+            /*background: url(img/baskee/background-odd.svg) no-repeat;*/
         }
         
-        .feature-container-odd {
+        .feature-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 755px;
+            margin: 3em auto;
+        }
+        
+        .feature-container-content {
             position: relative;
-            height: 35em;
+            min-height: 1px;
+            width: 100%;
         }
         
-        .feature-container-left {
-            position: absolute;
-            top: 5%;
-            right: 55%;
+        .left {
+            flex: 0 0 40%;
+            max-width: 35%;
+            padding: 0 2.5%;
         }
         
-        .feature-container-right {
-            position: absolute;
-            top: 0;
-            left: 55%;
-            width: 40%;
+        .right {
+            flex: 0 0 60%;
+            max-width: 50%;
+            padding: 0 5%;
         }
         
         .feature-image-1 {
@@ -187,10 +187,6 @@
         }
         
         .feature-image-2 {
-            width: 100%;
-            position: absolute;
-            top: 15%;
-            right: -15%;
             max-width: 250px;
         }
         
@@ -281,10 +277,10 @@
 
     <div class="features">
         <div class="feature-container">
-            <div class="feature-container-left">
+            <div class="feature-container-content left">
                 <img class="feature-image-1" src=" img/baskee/store_list_phone.png" />
             </div>
-            <div class="feature-container-right">
+            <div class="feature-container-content right">
                 <h2>Save all your favorite shops prices</h2>
                 <p>
                     Get a quick access to all the shops where you are used to do your groceries.
@@ -293,13 +289,11 @@
             </div>
         </div>
 
-        <div class="feature-container-odd" style="">
-            <img class="feature-bg" src="img/baskee/background-odd.svg" />
-            <div class="feature-container-left">
+        <div class="feature-container feature-bg">
+            <div class="feature-container-content left">
                 <img class="feature-image-1" src="img/baskee/article_list_1_phone.png " />
-                <img class="feature-image-2" src="img/baskee/article_list_2_phone.png " />
             </div>
-            <div class="feature-container-right">
+            <div class="feature-container-content right">
                 <h2>Analyse the composition of your baskets</h2>
                 <p>
                     Check what cost you the most in your baskets.
@@ -309,10 +303,10 @@
         </div>
 
         <div class="feature-container">
-            <div class="feature-container-left">
+            <div class="feature-container-content left">
                 <img class="feature-image-1" src="img/baskee/lookup_phone.png " />
             </div>
-            <div class="feature-container-right">
+            <div class="feature-container-content right">
                 <h2>All your previous purchase at your fingertips</h2>
                 <p>
                     Quickly get the price of any articles you purchased in the past.
@@ -321,13 +315,11 @@
             </div>
         </div>
 
-        <div class="feature-container-odd">
-            <img class="feature-bg" src="img/baskee/background-odd.svg" />
-            <div class="feature-container-left">
-                <img class="feature-image-1" src="img/baskee/history_1_phone.png " />
-                <img class="feature-image-2" src="img/baskee/history_2_phone.png " />
+        <div class="feature-container">
+            <div class="feature-container-content left">
+                <img class="feature-image-1" src="img/baskee/history_2_phone.png " />
             </div>
-            <div class="feature-container-right">
+            <div class="feature-container-content right">
                 <h2>Track your expenses</h2>
                 <p>
                     Knowledge is power, know at any time how much your monthly spending is.
