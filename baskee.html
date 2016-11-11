@@ -182,9 +182,16 @@
             padding: 0 5%;
         }
         
+        .col-6 {
+            flex: 0 0 50%;
+            max-width: 40%;
+            padding: 0 5%;
+        }
+        
         .feature-image-1 {
             width: 100%;
             max-width: 250px;
+            margin-top: 1.5em;
         }
         
         .separator {
@@ -210,7 +217,7 @@
             <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
 
             <div class="banner-text">
-                <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
+                <img style="width:100%" src="img/baskee/logo.png" />
                 <div class="banner-subtext">
                     <span>You deserve to know everything!</span>
                     <br>
@@ -272,8 +279,9 @@
         </div>
     </div>
 
-    <div class="features">
+    <div class="features" style="overflow:hidden;">
         <div class="feature-container">
+            <img class="feature-bg" src="img/baskee/background-odd.svg" />
             <div class="feature-container-content left">
                 <img class="feature-image-1" src=" img/baskee/store_list_phone.png" />
             </div>
@@ -287,7 +295,6 @@
         </div>
 
         <div class="feature-container">
-            <img class="feature-bg" src="img/baskee/background-odd.svg" />
             <div class="feature-container-content left">
                 <img class="feature-image-1" src="img/baskee/article_list_1_phone.png " />
             </div>
@@ -301,6 +308,7 @@
         </div>
 
         <div class="feature-container">
+            <img class="feature-bg" src="img/baskee/background-odd.svg" />
             <div class="feature-container-content left">
                 <img class="feature-image-1" src="img/baskee/lookup_phone.png " />
             </div>
@@ -314,7 +322,6 @@
         </div>
 
         <div class="feature-container">
-            <img class="feature-bg" src="img/baskee/background-odd.svg" />
             <div class="feature-container-content left">
                 <img class="feature-image-1" src="img/baskee/history_2_phone.png " />
             </div>
@@ -327,10 +334,18 @@
             </div>
         </div>
 
-        <div class="google-play-btn">
-            <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
-                <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
-            </a>
+        <div class="feature-container">
+            <img class="feature-bg" src="img/baskee/background-odd.svg" style="max-height:200px;"/>
+            <div class="feature-container-content col-6">
+                <a href="https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB">
+                    <img style="width:100%; margin: 0.75em auto" src="img/baskee/logo.png" alt="Get Baskee" />
+                </a>
+            </div>
+            <div class="feature-container-content col-6">
+                <a href="https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB">
+                    <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
+                </a>
+            </div>
         </div>
     </div>
 
