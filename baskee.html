@@ -24,74 +24,12 @@
         
         html {
             font-family: 'Roboto', sans-serif;
-            color: #072640;
-        }
-        
-        .lg {
-            width: 100%;
-            height: 50vw;
-        }
-        
-        .md {
-            width: 100%;
-            height: 100vw;
-        }
-        
-        .sm {
-            width: 100%;
-            height: 100vw;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .lg {
-                display: none;
-            }
-            .md {
-                display: none;
-            }
-            .sm {
-                display: block;
-            }
-        }
-        
-        @media screen and (min-width: 601px) and (max-width: 900px) {
-            .lg {
-                display: none;
-            }
-            .md {
-                display: block;
-            }
-            .sm {
-                display: none;
-            }
-        }
-        
-        @media screen and (min-width: 901px) {
-            .lg {
-                display: block;
-            }
-            .md {
-                display: none;
-            }
-            .sm {
-                display: none;
-            }
         }
         
         .header {
             background-color: #2196f3;
             position: relative;
             width: 100%;
-        }
-        
-        .logo {
-            position: absolute;
-            left: 0;
-        }
-        
-        .features-link {
-            position: absolute;
-            right: 0;
         }
         
         .banner {
@@ -101,48 +39,8 @@
             font-family: 'Dancing Script', cursive;
         }
         
-        .banner-content {
-            max-width: 600px;
-        }
-        
-        h2 {
-            font-family: 'Dancing Script', cursive;
-            font-size: xx-large;
-        }
-        
-        .banner-photo-1 {
-            width: 30%;
-            position: absolute;
-            left: -5%;
-            top: 45%;
-        }
-        
-        .banner-photo-2 {
-            width: 30%;
-            position: absolute;
-            left: 2.5%;
-            top: 35%;
-        }
-        
-        .banner-photo-3 {
-            width: 30%;
-            position: absolute;
-            left: 10%;
-            top: 25%;
-        }
-        
-        .banner-photo-4 {
-            width: 30%;
-            position: absolute;
-            left: 15%;
-            top: 15%;
-        }
-        
         .banner-text {
             color: white;
-            position: absolute;
-            right: 0;
-            top: 15%;
             width: 50%;
             padding-left: 2.5%;
             padding-right: 2.5%;
@@ -152,6 +50,11 @@
             font-size: xx-large;
             text-align: center;
             margin: 1em 0;
+        }
+        
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: xx-large;
         }
         
         .google-play-btn {
@@ -228,7 +131,7 @@
 </head>
 
 <body>
-    <div class="banner lg">
+    <div class="banner">
         <div class="banner-content">
             <img class="banner-photo-1" src="img/baskee/history_1_phone.png" />
             <img class="banner-photo-2" src="img/baskee/lookup_phone.png" />
@@ -236,7 +139,7 @@
             <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
 
             <div class="banner-text">
-                <img style="width:100%" src="img/baskee/logo.png" />
+                <img style="width:100%" src="img/baskee/baskee_logo_v3.png"></img>
                 <div class="banner-subtext">
                     <span>You deserve to know everything!</span>
                     <br>
@@ -244,61 +147,14 @@
                 </div>
                 <div>
                     <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
-                        <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
+                        <img class="google-play-btn" alt="Get it on Google Play" src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png"></img>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="banner md">
-        <div class="banner-content">
-            <img class="banner-photo-1" src="img/baskee/history_1_phone.png" />
-            <img class="banner-photo-2" src="img/baskee/lookup_phone.png" />
-            <img class="banner-photo-3" src="img/baskee/article_list_2_phone.png" />
-            <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
-
-            <div class="banner-text">
-                <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
-                <div class="banner-subtext">
-                    <span>You deserve to know everything!</span>
-                    <br>
-                    <span>Save <strong>money</strong>, be</span> <strong>happy!</strong>
-                </div>
-                <div>
-                    <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
-                        <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="banner sm">
-        <div class="banner-content">
-            <img class="banner-photo-1" src="img/baskee/history_1_phone.png" />
-            <img class="banner-photo-2" src="img/baskee/lookup_phone.png" />
-            <img class="banner-photo-3" src="img/baskee/article_list_2_phone.png" />
-            <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
-
-            <div class="banner-text">
-                <img style="width:100%" src="img/baskee/baskee_logo_v3.png" />
-                <div class="banner-subtext">
-                    <span>You deserve to know everything!</span>
-                    <br>
-                    <span>Save <strong>money</strong>, be</span> <strong>happy!</strong>
-                </div>
-                <div>
-                    <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
-                        <img class="google-play-btn" alt='Get it on Google Play' src='https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png' />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    
     <div class="features">
         <div class="feature-container feature-bg">
             <div class="feature-container-content left">
@@ -352,6 +208,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="footer">
         <div class="google-play-btn" style="padding-top: 1em;">
