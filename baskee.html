@@ -33,18 +33,22 @@
         }
         
         .banner {
+            overflow: hidden;
             background-color: #2196f3;
             position: relative;
-            overflow: hidden;
             font-family: 'Dancing Script', cursive;
+            color: white;
+            padding: 5%;
         }
         
-        .banner-text {
-            color: white;
-            width: 50%;
-            padding-left: 2.5%;
-            padding-right: 2.5%;
+        .banner-image {
+            width: 80%;
+            position: absolute;
+            left: 10%;
+            top: 30%;
         }
+        
+        .banner-content {}
         
         .banner-subtext {
             font-size: xx-large;
@@ -57,9 +61,9 @@
             font-size: xx-large;
         }
         
-        .google-play-btn {
+        .image-button {
             width: 100%;
-            max-width: 250px;
+            max-width: 300px;
             margin: 0 auto;
         }
         
@@ -98,7 +102,7 @@
             padding: 0 5%;
         }
         
-        .feature-image-1 {
+        .feature-image {
             width: 100%;
             max-width: 250px;
             margin-top: 1.5em;
@@ -132,33 +136,29 @@
 
 <body>
     <div class="banner">
+        <img src="img/baskee/banner_screenshot.png" class="banner-image" />
         <div class="banner-content">
-            <img class="banner-photo-1" src="img/baskee/history_1_phone.png" />
-            <img class="banner-photo-2" src="img/baskee/lookup_phone.png" />
-            <img class="banner-photo-3" src="img/baskee/article_list_2_phone.png" />
-            <img class="banner-photo-4" src="img/baskee/store_list_phone.png" />
-
-            <div class="banner-text">
-                <img style="width:100%" src="img/baskee/baskee_logo_v3.png"></img>
-                <div class="banner-subtext">
-                    <span>You deserve to know everything!</span>
-                    <br>
-                    <span>Save <strong>money</strong>, be</span> <strong>happy!</strong>
-                </div>
-                <div>
-                    <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
-                        <img class="google-play-btn" alt="Get it on Google Play" src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png"></img>
-                    </a>
-                </div>
+            <div class="image-button">
+                <img style="width:100%;" src="img/baskee/logo.png"></img>
+            </div>
+            <div class="banner-subtext">
+                <span>You deserve to know everything!</span>
+                <br>
+                <span>Save <strong>money</strong>, be</span> <strong>happy!</strong>
+            </div>
+            <div class="image-button">
+                <a href='https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB'>
+                    <img style="width: 100%;" alt="Get it on Google Play" src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png"></img>
+                </a>
             </div>
         </div>
     </div>
 
-    
+
     <div class="features">
         <div class="feature-container feature-bg">
             <div class="feature-container-content left">
-                <img class="feature-image-1" src=" img/baskee/store_list_phone.png" />
+                <img class="feature-image" src=" img/baskee/store_list_phone.png" />
             </div>
             <div class="feature-container-content right">
                 <h2>Save all your favorite shops prices</h2>
@@ -171,7 +171,7 @@
 
         <div class="feature-container">
             <div class="feature-container-content left">
-                <img class="feature-image-1" src="img/baskee/article_list_1_phone.png " />
+                <img class="feature-image" src="img/baskee/article_list_1_phone.png " />
             </div>
             <div class="feature-container-content right">
                 <h2>Analyse the composition of your baskets</h2>
@@ -184,7 +184,7 @@
 
         <div class="feature-container feature-bg">
             <div class="feature-container-content left">
-                <img class="feature-image-1" src="img/baskee/lookup_phone.png " />
+                <img class="feature-image" src="img/baskee/lookup_phone.png " />
             </div>
             <div class="feature-container-content right">
                 <h2>All your previous purchase at your fingertips</h2>
@@ -197,7 +197,7 @@
 
         <div class="feature-container">
             <div class="feature-container-content left">
-                <img class="feature-image-1" src="img/baskee/history_2_phone.png " />
+                <img class="feature-image" src="img/baskee/history_2_phone.png " />
             </div>
             <div class="feature-container-content right">
                 <h2>Track your expenses</h2>
@@ -211,7 +211,7 @@
 
 
     <div class="footer">
-        <div class="google-play-btn" style="padding-top: 1em;">
+        <div class="image-button" style="padding-top: 1em;">
             <a href=" https://play.google.com/store/apps/details?id=com.kimserey.baskee&hl=en_GB ">
                 <img style="width:100% " alt="Get it on Google Play " src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png " />
             </a>
