@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
@@ -10,16 +9,106 @@
     <title>Kimserey Lam</title>
 
     <style>
-        .wrapper {
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .banner {
+            background-color: #092b47;
+            padding: 8em 2em;
+        }
+        
+        .banner-image {
+            width: 100%;
+            max-width: 35em;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .profile {
             position: relative;
-            height: 100%;
+            top: -6.5em;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .profile ul {
+            padding: 0;
+            width: 100%;
+            list-style: none;
+        }
+        
+        .profile ul li {
+            text-align: center;
+            width: 100%;
+            margin: 2em 0;
+        }
+        
+        .profile ul li a {
+            color: #092b47;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        
+        .profile ul li a:hover {
+            border-top: .5em solid #092b47;
+            border-bottom: .5em solid #092b47;
+        }
+        
+        .profile .profile-image {
+            width: 15em;
+            height: 15em;
+            max-width: 250px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .profile .profile-text {
+            text-align: center;
+        }
+        
+        .profile .profile-links {
+            margin: 0 auto;
+        }
+        
+        .footer {
+            background-color: #092b47;
+            color: white;
+            position: absolute;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        @media (max-height: 900px) {
+            .footer {
+                top: 900px;
+            }
+        }
+        
+        @media (min-height: 901px) {
+            .footer {
+                bottom: 0;
+            }
+        }
+        
+        .footer-text {
+            padding: 1em;
+            font-size: large;
+            display: block;
         }
     </style>
 </head>
 
 <body>
     <div class="banner">
-        <img class="banner-image" src="img/kimsereylam_com_logo.png" alt="kimserey lam logo" />
+        <img class="banner-image" src="img/kimsereylogo_v2.png" alt="kimserey lam logo" />
     </div>
     <div class="profile">
         <img class="profile-image" src="img/me.png" alt="me">
