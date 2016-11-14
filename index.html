@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/index/favicon.png" />
     <title>Kimserey Lam</title>
 
     <style>
@@ -20,7 +20,7 @@
         
         .banner {
             padding: 8em 2em;
-            background: url(img/sky_1.jpeg) no-repeat;
+            background: url(img/index/sky_1.jpeg) no-repeat;
             background-size: cover;
         }
         
@@ -87,13 +87,13 @@
             font-weight: bold;
         }
         
-        @media (max-height: 900px) {
+        @media (max-height: 1200px) {
             .footer {
-                top: 900px;
+                top: 1200px;
             }
         }
         
-        @media (min-height: 901px) {
+        @media (min-height: 1201px) {
             .footer {
                 bottom: 0;
             }
@@ -103,22 +103,53 @@
             padding: 1em;
             font-size: large;
             display: block;
-            background: url(img/sky_1.jpeg) no-repeat;
+            background: url(img/index/sky_1.jpeg) no-repeat;
             background-size: cover;
             background-position-x: center;
             background-position-x: center;
+        }
+        
+        .baskee-icon {
+            position: relative;
+            width: 1.5em;
+            top: .40em;
+            margin-right: .4em;
+        }
+        
+        .baskee-screenshots {
+            margin-top: 2em;
+        }
+        
+        .baskee-logo {
+            max-width: 125px;
+        }
+        
+        .baskee-screenshot {
+            width: 23%;
+            max-width: 100px;
         }
     </style>
 </head>
 
 <body>
     <div class="banner">
-        <img class="banner-image" src="img/kimsereylogo_v2.png" alt="kimserey lam logo" />
+        <img class="banner-image" src="img/index/kimsereylogo_v2.png" alt="kimserey lam logo" />
     </div>
     <div class="profile">
-        <img class="profile-image" src="img/me.png" alt="me">
+        <img class="profile-image" src="img/index/me.png" alt="me">
         <div class="profile-links">
             <ul>
+                <li>
+                    <a href="/baskee.html"><img src="img/index/baskee_icon.png" class="baskee-icon" />
+                        <span>DOWNLOAD MY APP</span>
+                        <div class="baskee-screenshots">
+                            <img class="baskee-screenshot" src="img/index/baskee_screenshot_1.png" />
+                            <img class="baskee-screenshot" src="img/index/baskee_screenshot_2.png" />
+                            <img class="baskee-screenshot" src="img/index/baskee_screenshot_3.png" />
+                            <img class="baskee-screenshot" src="img/index/baskee_screenshot_4.png" />
+                        </div>
+                    </a>
+                </li>
                 <li><a href="https://kimsereyblog.blogspot.co.uk/"><i class="fa fa-rss" aria-hidden="true "></i>&nbsp; BLOG</a></li>
                 <li><a href="https://github.com/Kimserey "><i class="fa fa-github" aria-hidden="true "></i>&nbsp; GITHUB</a></li>
                 <li><a href="https://twitter.com/Kimserey_Lam "><i class="fa fa-twitter" aria-hidden="true "></i>&nbsp; TWITTER</a></li>
