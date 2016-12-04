@@ -1,6 +1,6 @@
 # KIMSEREYLAM.COM
 
-[=> My Webshite <=](https://kimsereylam.com)
+[=> My Website <=](https://kimsereylam.com)
 
 This is my personal website, get in touch on [Twitter](https://twitter.com/Kimserey_Lam) or [LinkedIn](https://www.linkedin.com/in/kimsereylam) ;).
 
