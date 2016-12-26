@@ -17,6 +17,35 @@
         body {
             font-family: 'FjallaOne';
             font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .content {
+            text-align: center;
+        }
+
+        .step {
+            padding: 1em;
+        }
+        
+        .step-inverse {
+            padding: .5em;
+            background: rgba(69, 90, 100, 0.79);
+            color: white;
+            display: inline-block;
+            border-radius: 15px;
+        }
+        
+        .step > p {
+            max-width: 700px;
+            margin: auto;
+            padding: 1em;
+        }
+        
+        .banner {
+            background: #455a64;
+            color: white;
         }
         
         .underline {
@@ -29,11 +58,15 @@
             padding: 0em .1em;
         }
         
-        .image-inline {
+        .screenshots {
+            margin: auto;
+        }
+        
+        .image-screenshot {
             display: inline-block !important;
         }
         
-        .image-inline > img {
+        .image-screenshot > img {
             max-width: 300px;
         }
         
@@ -54,48 +87,64 @@
 
 <body>
     <div class="banner">
-        <img class="logo" src="img/expenseking/icon.png" />
-        <img class="logo_text" src="img/expenseking/logo_text.png" />
+        <div>
+            <img class="logo" src="img/expenseking/icon.png" />
+            <img class="logo_text" src="img/expenseking/logo_text.png" />
+        </div>
         <h1>Categorize, label, sort and filter all your expenses automatically!</h1>
     </div>
 
-    <h1>HOW TO UPLOAD EXPENSES - <small>in five quick/easy/fun steps :)</small></h1>
-    <div>
-        <div class="image-inline"><img src="img/expenseking/1_drive.png"></div>
-        <div>
-            STEP 1: Drop your expenses in <span class="underline">Google DRIVE</span> in <span class="underline">CSV format</span>.
+    <div class="content">
+        <h1 class="step-inverse">GET STARTED IN FIVE QUICK STEPS :)</h1>
+        <div class="step">
+            <h2 class="underline">STEP 1</h2>
+            <div class="image-screenshot"><img src="img/expenseking/1_drive.png"></div>
+            <p>
+                Drop your expenses in <strong>Google DRIVE</strong> in <strong>CSV format</strong>.
+            </p>
+        </div>
+
+        <div class="step-inverse">
+            <h2 class="underline">STEP 2</h2>
+            <div class="screenshots">
+                <div class="image-screenshot"><img src="img/expenseking/2_1_menu.png"></div>
+                <div class="image-screenshot"><img src="img/expenseking/2_2_file_add.png"></div>
+                <div class="image-screenshot"><img src="img/expenseking/2_3_file_select.png"></div>
+            </div>
+            <p>
+                Navigate to <strong>UPLOAD FROM DRIVE</strong>, click on the <strong>Add new file icon</strong>, select your file from your Google Drive and your file will appear under the <strong>FILES</strong> tab.
+            </p>
+        </div>
+
+        <div class="step">
+            <h2 class="underline">STEP 3</h2>
+            <div class="screenshots">
+                <div class="image-screenshot"><img src="img/expenseking/3_1_upload_actionsheet.png"></div>
+                <div class="image-screenshot"><img src="img/expenseking/3_2_configurations.png"></div>
+                <div class="image-screenshot"><img src="img/expenseking/3_3_configuration_add.png"></div>
+            </div>
+            <p>
+                Create a configuration for your newly uploaded file by clicking on the file and selecting <strong>Configure</strong> from the pop-up menu. <small>(configurations are used to know things like where are the dates, titles and amounts of your expenses!)</small>
+            </p>
+        </div>
+
+        <div class="step-inverse">
+            <h2 class="underline">STEP 4</h2>
+            <div class="image-screenshot"><img src="img/expenseking/4_1_configuration_select.png"></div>
+            <div class="image-screenshot"><img src="img/expenseking/4_2_configuration_selected.png"></div>
+            <p>
+                Select your new configuration. The configuration name should now appear as a subtitle of the file.
+            </p>
+        </div>
+
+        <div class="step">
+            <h2 class="underline">STEP 5</h2>
+            <div class="image-screenshot"><img src="img/expenseking/5_1_synchronize.png"></div>
+            <p>
+                Once all your files are linked to a configuration, <strong>SYNCHRONIZE! And <strong>VOILA!</strong> All your expenses from your CSV are now uploaded in Expense King!
+            </p>
         </div>
     </div>
-    <div>
-        <div class="image-inline"><img src="img/expenseking/2_1_menu.png"></div>
-        <div class="image-inline"><img src="img/expenseking/2_2_file_add.png"></div>
-        <div class="image-inline"><img src="img/expenseking/2_3_file_select.png"></div>
-        <div>
-            STEP 2: Navigate to <span class="underline">UPLOAD FROM DRIVE</span>, click on the add new file icon, select your file from your Google Drive and your file will appear under the FILES tab.
-        </div>
-    </div>
-    <div>
-        <div class="image-inline"><img src="img/expenseking/3_1_upload_actionsheet.png"></div>
-        <div class="image-inline"><img src="img/expenseking/3_2_configurations.png"></div>
-        <div class="image-inline"><img src="img/expenseking/3_3_configuration_add.png"></div>
-        <div>
-            STEP 3: Create a configuration for your newly uploaded file by clicking on the file and selecting <span class="underline">Configure</span> from the pop-up menu. <small>(configurations are used to know things like where are the dates, titles and amounts of your expenses!)</small>
-        </div>
-    </div>
-    <div>
-        <div class="image-inline"><img src="img/expenseking/4_1_configuration_select.png"></div>
-        <div class="image-inline"><img src="img/expenseking/4_2_configuration_selected.png"></div>
-        <div>
-            STEP 4: Select your new configuration. The configuration name should now appear as a subtitle of the file.
-        </div>
-    </div>
-    <div>
-        <div class="image-inline"><img src="img/expenseking/5_1_synchronize.png"></div>
-        <div>
-            STEP 5: Once all your files are linked to a configuration, SYNCHRONIZE! And <span class="emphasis">VOILA!</span> All your expenses from your CSV are now uploaded in Expense King!
-        </div>
-    </div>
-    <h1>HOW TO LABEL AND CATEGORIZE - <small>in five quick/easy/fun steps :)</small></h1>
 </body>
 
 </html>
