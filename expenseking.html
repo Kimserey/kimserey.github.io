@@ -24,7 +24,7 @@
         .content {
             text-align: center;
         }
-
+        
         .step {
             padding: 1em;
         }
@@ -34,7 +34,6 @@
             background: rgba(69, 90, 100, 0.79);
             color: white;
             display: inline-block;
-            border-radius: 15px;
         }
         
         .step > p {
@@ -46,6 +45,18 @@
         .banner {
             background: #455a64;
             color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        .banner > .inner {
+            background: url('img/expenseking/banner.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: center;
+            max-width: 1000px;
+            margin: auto;
+            padding: 1em;
         }
         
         .underline {
@@ -58,12 +69,10 @@
             padding: 0em .1em;
         }
         
-        .screenshots {
-            margin: auto;
-        }
-        
         .image-screenshot {
+            margin: .1em;
             display: inline-block !important;
+            border: solid;
         }
         
         .image-screenshot > img {
@@ -74,24 +83,29 @@
             display: inline-block;
         }
         
-        .logo {
-            width: 4em;
-        }
-        
         .logo_text {
-            margin: .7em 0;
-            width: 10em;
+            width: 80%;
+        }
+
+        .image-button {
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
     <div class="banner">
-        <div>
-            <img class="logo" src="img/expenseking/icon.png" />
+        <div class="inner">
             <img class="logo_text" src="img/expenseking/logo_text.png" />
+            <h1>Categorize, label, sort and filter all your expenses automatically!</h1>
+            <div class="image-button">
+                <a href="https://play.google.com/store/apps/details?id=com.kimserey.dexpee">
+                    <img style="width: 100%;" alt="Get it on Google Play" src="https://play.google.com/intl/en_gb/badges/images/generic/en_badge_web_generic.png"></img>
+                </a>
+            </div>
         </div>
-        <h1>Categorize, label, sort and filter all your expenses automatically!</h1>
     </div>
 
     <div class="content">
@@ -106,11 +120,9 @@
 
         <div class="step-inverse">
             <h2 class="underline">STEP 2</h2>
-            <div class="screenshots">
-                <div class="image-screenshot"><img src="img/expenseking/2_1_menu.png"></div>
-                <div class="image-screenshot"><img src="img/expenseking/2_2_file_add.png"></div>
-                <div class="image-screenshot"><img src="img/expenseking/2_3_file_select.png"></div>
-            </div>
+            <div class="image-screenshot"><img src="img/expenseking/2_1_menu.png"></div>
+            <div class="image-screenshot"><img src="img/expenseking/2_2_file_add.png"></div>
+            <div class="image-screenshot"><img src="img/expenseking/2_3_file_select.png"></div>
             <p>
                 Navigate to <strong>UPLOAD FROM DRIVE</strong>, click on the <strong>Add new file icon</strong>, select your file from your Google Drive and your file will appear under the <strong>FILES</strong> tab.
             </p>
@@ -118,11 +130,9 @@
 
         <div class="step">
             <h2 class="underline">STEP 3</h2>
-            <div class="screenshots">
-                <div class="image-screenshot"><img src="img/expenseking/3_1_upload_actionsheet.png"></div>
-                <div class="image-screenshot"><img src="img/expenseking/3_2_configurations.png"></div>
-                <div class="image-screenshot"><img src="img/expenseking/3_3_configuration_add.png"></div>
-            </div>
+            <div class="image-screenshot"><img src="img/expenseking/3_1_upload_actionsheet.png"></div>
+            <div class="image-screenshot"><img src="img/expenseking/3_2_configurations.png"></div>
+            <div class="image-screenshot"><img src="img/expenseking/3_3_configuration_add.png"></div>
             <p>
                 Create a configuration for your newly uploaded file by clicking on the file and selecting <strong>Configure</strong> from the pop-up menu. <small>(configurations are used to know things like where are the dates, titles and amounts of your expenses!)</small>
             </p>
