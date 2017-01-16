@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script'), local('DancingScript'), url(https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/font/dancingscript.v7.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Banner */
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    padding: 5%;
+}
+
+.banner-content {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    padding: 10%;
+}
+
+.banner-subtext {
+    font-size: xx-large;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.banner-icon {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image-button {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
+/* Content */
+
+.content {
+    text-align: center;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 5%;
+}
+
+.footer-logo {
+    height: 2em;
+    position: relative;
+    top: 7px;
+}
+
+.footer-text {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: .5em;
+    font-weight: 300;
+}
+
+.footer-text a {
+    color: white;
+}
