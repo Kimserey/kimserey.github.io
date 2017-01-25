@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Hi I am Kimserey LAM :). I make mobile apps and web apps which improve people's lives. I also share my knowledge through my blog. Don't forget to checkout my new app BASKEE and follow me on Twitter!">
+    <meta name="description" content="Hi, my name is Kimserey LAM. I am a French software engineer who build software which help improve people's life. I have more than 6 years experience working on web, mobile and desktop solutions in France, United Kingdom and Singapore">
     <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/index/favicon.png" />
@@ -18,6 +18,10 @@
         
         html {
             font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            text-decoration: underline;
         }
         
         .banner {
@@ -38,6 +42,7 @@
             top: -6em;
             width: 100%;
             margin: 0 auto;
+            text-align: center;
         }
         
         .profile .profile-image {
@@ -64,7 +69,7 @@
         .profile ul li a {
             color: #092b47;
             text-decoration: none;
-            font-size: x-large;
+            font-size: large;
         }
         
         .profile ul li a:hover {
@@ -80,35 +85,14 @@
             margin: 0 auto;
         }
         
-        .footer {
-            background-color: #092b47;
-            color: white;
-            position: absolute;
-            width: 100%;
-            cursor: pointer;
-            font-weight: bold;
+        .profile .profile-description {
+            line-height: 1.5em;
+            padding: 0 1.5em;
         }
         
-        @media (max-height: 1600px) {
-            .footer {
-                top: 1600px;
-            }
-        }
-        
-        @media (min-height: 1601px) {
-            .footer {
-                bottom: 0;
-            }
-        }
-        
-        .footer-text {
-            padding: 1em;
-            font-size: large;
-            display: block;
-            background: url(img/index/sky_1.jpeg) no-repeat;
-            background-size: cover;
-            background-position-x: center;
-            background-position-x: center;
+        .profile .profile-section {
+            margin-top: 1em;
+            margin-bottom: 3em;
         }
         
         .app-icon {
@@ -136,7 +120,29 @@
     </div>
     <div class="profile">
         <img class="profile-image" src="https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/img/index/me.png" alt="me">
-        <div class="profile-links">
+        <div class="profile-description profile-section">
+            <h1>About me</h1>
+            <p>
+                Hi, my name is Kimserey LAM.
+                <br/> I am a French software engineer who build software which help improve people's life.
+                <br/> I have more than 6 years experience working on web, mobile and desktop solutions in France, United Kingdom and Singapore.
+                <br/><br/> <strong> F# | C# | Xamarin | SQLite | Windows Azure </strong>
+            </p>
+        </div>
+        <div class="profile-links profile-section">
+            <h1>Knowledge sharing</h1>
+            <ul>
+                <li><a href="https://kimsereyblog.blogspot.co.uk/"><i class="fa fa-rss" aria-hidden="true "></i>&nbsp; MY BLOG</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0-52_dUZISM&index=8&list=PLNaI6DafEcihpHv9wvstOiy8onT-mqwJG"><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp; MY DAILY WORKOUTS</a></li>
+                <li><a href="/books"><i class="fa fa-book"></i>&nbsp; BOOK RECOMMENDATIONS</a></li>
+                <li><a href="https://github.com/Kimserey "><i class="fa fa-github" aria-hidden="true "></i>&nbsp; GITHUB</a></li>
+                <li><a href="https://twitter.com/Kimserey_Lam "><i class="fa fa-twitter" aria-hidden="true "></i>&nbsp; TWITTER</a></li>
+                <li><a href="https://www.linkedin.com/in/kimserey-lam-99374021"><i class="fa fa-linkedin-square " aria-hidden="true "></i>&nbsp; LINKEDIN</a></li>
+                <li><a href="mailto:kimserey.lam@groomgy.com?subject=Mail from KIMSEREYLAM.COM"><i class="fa fa-envelope" aria-hidden="true "></i>&nbsp; GET IN TOUCH</a></li>
+            </ul>
+        </div>
+        <div class="profile-links profile-section">
+            <h1>Personal projects</h1>
             <ul>
                 <li>
                     <a href="/baskee"><img src="https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/img/index/baskee_icon.png" class="app-icon" />
@@ -165,44 +171,9 @@
                         <span>DOWNLOAD MY APP - RECIPE KEEPER</span>
                     </a>
                 </li>
-                <li><a href="https://kimsereyblog.blogspot.co.uk/"><i class="fa fa-rss" aria-hidden="true "></i>&nbsp; MY BLOG</a></li>
-                <li><a href="https://www.youtube.com/watch?v=0-52_dUZISM&index=8&list=PLNaI6DafEcihpHv9wvstOiy8onT-mqwJG"><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp; MY DAILY WORKOUTS</a></li>
-                <li><a href="/books"><i class="fa fa-book"></i>&nbsp; BOOK RECOMMENDATIONS</a></li>
-                <li><a href="https://github.com/Kimserey "><i class="fa fa-github" aria-hidden="true "></i>&nbsp; GITHUB</a></li>
-                <li><a href="https://twitter.com/Kimserey_Lam "><i class="fa fa-twitter" aria-hidden="true "></i>&nbsp; TWITTER</a></li>
-                <li><a href="https://www.linkedin.com/in/kimserey-lam-99374021"><i class="fa fa-linkedin-square " aria-hidden="true "></i>&nbsp; LINKEDIN</a></li>
-                <li><a href="mailto:kimserey.lam@groomgy.com?subject=Mail from KIMSEREYLAM.COM"><i class="fa fa-envelope" aria-hidden="true "></i>&nbsp; GET IN TOUCH</a></li>
             </ul>
         </div>
     </div>
-    <div class="footer" id="footer">
-        <span class="footer-text" id="footerText"></span>
-    </div>
-    <script>
-        // Some messages for you :)
-        var messages = [
-            "Hello there! Welcome to kimsereylam.com, I am Kimserey nice to meet you :)",
-            "Hey thanks for visiting my website! You are the best :)",
-            "Hey how are you today? You look good :)",
-            "Fancy a beer? Hit me on Twitter @Kimserey_Lam :)",
-            "Thanks for passing by! Have a nice day! :)",
-            "Don't forget to checkout my blog! :)",
-            "You look good today! Did you change your haircut? :)",
-            "Hey thanks for showing up on my website! Have a good day! :)",
-            "Let's catch up on Twitter @Kinserey_Lam :)",
-            "For business related stuff, add me on LinkedIn or Twitter :)"
-        ];
-
-        // Random method: http://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
-        var message = messages[Math.floor(Math.random() * messages.length)];
-
-        document.addEventListener("DOMContentLoaded", function(event) {
-            document.getElementById("footerText").textContent = message;
-            document.getElementById("footer").addEventListener("click", function(ev) {
-                location.reload();
-            });
-        });
-    </script>
 </body>
 
 </html>
