@@ -110,7 +110,6 @@
                             var title = post.title.$t;
                             var description = post.summary.$t;
                             var href = post.link[4].href;
-                            console.log(post.published.$t);
                             var date = moment(post.published.$t).format("D MMM YYYY");
                             list.appendChild(template(title, description, date, href));
                         });
