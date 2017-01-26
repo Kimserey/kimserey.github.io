@@ -82,6 +82,9 @@ h1 {
     margin-bottom: 3em;
 }
 
+
+/* app links style */
+
 .app-icon {
     position: relative;
     width: 1.5em;
@@ -102,6 +105,13 @@ h1 {
 .mobile {
     border: 2px solid grey;
     border-radius: 2px;
+}
+
+.app-description {
+    font-size: smaller;
+    color: grey;
+    max-width: 500px;
+    margin: .5em auto;
 }
 
 
