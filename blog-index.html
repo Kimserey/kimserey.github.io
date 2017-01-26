@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Hey it's me Kimserey Lam! Checkout my app, my lastest blog posts or contact me from my social links :).">
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/index/favicon.png" />
+    <title>Kimserey Lam - Blog index</title>
+    <link href="css/index-style.css" rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div class="banner">
+        <img class="banner-image" src="img/index/kimsereylogobooks.png" alt="kimserey lam logo" />
+    </div>
+    <div class="profile">
+        <a href="/"><img class="profile-image" src="img/index/me.png" alt="me"></a>
+        <div class="content">
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">F# posts</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">Xamarin iOS/Android/Forms posts</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">WebSharper posts</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">Web related posts</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">Design posts</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">Other posts</div>
+                </div>
+
+            </div>
+
+            <a href="/" class="back-link"><i class="fa fa-arrow-left"></i>&nbsp; GO BACK TO KIMSEREYLAM.COM</a>
+        </div>
+    </div>
+
+    <script>
+        var showposts =
+            (function() {
+                function template(title, description, date, href) {
+                    var div = document.createElement('div');
+                    if (description.length > 50)
+                        description = description.substring(0, 200) + '...';
+                    div.innerHTML = '<div class="blog-post">' + '<a href="' + href + '" class="post-title"> &#8594; ' + title + '</a>' + '<div class="post-description">' + description + " " + '<span class="post-date">' + date + '</span>' + '</div>' + '</div>';
+                    return div;
+                }
+
+                var list = document.getElementById("latestposts");
+
+                function get(t) {
+                    t.feed.entry
+                        .slice(0, 5)
+                        .forEach(function(post) {
+                            var title = post.title.$t;
+                            var description = post.summary.$t;
+                            var href = post.link[4].href;
+                            var date = moment(post.published.$t).format("D MMM YYYY");
+                            list.appendChild(template(title, description, date, href));
+                        });
+                }
+
+                return get;
+            })();
+    </script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=showposts"></script>
+
+</body>
+
+</html>

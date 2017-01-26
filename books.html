@@ -9,78 +9,7 @@
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/index/favicon.png" />
     <title>Kimserey Lam - Book recommendations</title>
-
-    <style>
-        body {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-        
-        html {
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .profile {
-            position: relative;
-            top: -6em;
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .profile .profile-image {
-            width: 12em;
-            height: 12em;
-            max-width: 250px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .banner {
-            padding: 8em 2em;
-            background: url(https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/img/index/sky_1.jpeg) no-repeat;
-            background-size: cover;
-        }
-        
-        .banner-image {
-            width: 100%;
-            max-width: 35em;
-            margin: 0 auto;
-            display: block;
-        }
-        
-        .title {
-            margin-bottom: 1.5em;
-            display: block;
-        }
-        
-        .title-content {
-            border-bottom: .3em solid #092b47;
-            display: inline;
-            color: #092b47;
-            text-decoration: none;
-            font-size: x-large;
-        }
-        
-        .story {
-            margin: 2em 0;
-        }
-        
-        .content {
-            padding: 0 1.5em;
-        }
-        
-        .book-list {
-            padding: 1em;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .back-link {
-            margin: 2em 0;
-            display: inline-block;
-        }
-    </style>
+    <link href="css/index-style.css" rel='stylesheet' type='text/css' />
 </head>
 
 <body>
@@ -90,7 +19,7 @@
     <div class="profile">
         <a href="/"><img class="profile-image" src="https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/img/index/me.png" alt="me"></a>
         <div class="content">
-            <div class="story">
+            <div class="section">
                 <div class="title">
                     <div class="title-content">A SHORT STORY</div>
                 </div>
@@ -108,7 +37,7 @@
                     <br>
                     <br> Thanks for checking out my recommendations and have a wonderful day!
             </div>
-            <div class="books">
+            <div class="section">
                 <div class="title">
                     <div class="title-content"><i class="fa fa-book"></i>&nbsp; BOOKS I READ IN 2016</div>
                 </div>
@@ -171,22 +100,6 @@
             <a href="/" class="back-link"><i class="fa fa-arrow-left"></i>&nbsp; GO BACK TO KIMSEREYLAM.COM</a>
         </div>
     </div>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-88463454-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 </html>
