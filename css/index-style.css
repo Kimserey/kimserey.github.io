@@ -53,13 +53,15 @@ h1 {
     margin: 2em 0;
 }
 
-.profile ul li a {
+.profile ul li a,
+.contact {
     color: #092b47;
     text-decoration: none;
     font-size: large;
 }
 
-.profile ul li a:hover {
+.profile ul li a:hover,
+.contact:hover {
     border-top: .5em solid #092b47;
     border-bottom: .5em solid #092b47;
 }
@@ -84,6 +86,10 @@ h1 {
 
 
 /* app links style */
+
+.projects {
+    padding: 0 1em;
+}
 
 .app-icon {
     position: relative;
@@ -120,7 +126,7 @@ h1 {
 .blog-posts {
     margin: auto;
     text-align: justify;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
     max-width: 500px;
 }
 
