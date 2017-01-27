@@ -16,6 +16,14 @@ h1 {
     font-size: smaller !important;
 }
 
+.text-underline {
+    text-decoration: underline;
+}
+
+.description {
+    color: grey;
+}
+
 .banner {
     padding: 8em 2em;
     background: url(https://raw.githubusercontent.com/Kimserey/kimserey.github.io/master/img/index/sky_1.jpeg) no-repeat;
