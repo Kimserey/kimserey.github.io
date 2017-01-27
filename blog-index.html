@@ -22,7 +22,7 @@
         <div class="content">
             <div class="section">
                 <div class="title">
-                    <div class="title-content">F# posts</div>
+                    <div class="title-content">F# posts</div> (<a>show</a>/<a>hide</a> tags)
                     <div id="fsharp"></div>
                 </div>
             </div>
@@ -63,9 +63,9 @@
 
     <script>
         function sh(id) {
-            function template(title, date, href) {
+            function template(title, date, href, categories) {
                 var div = document.createElement('div');
-                div.innerHTML = '<div class="blog-post">' + '<span class="post-date" style="display:inline-block; width: 75px;">' + date + '</span> &#8594; <a href="' + href + '" class="post-title">' + title + '</a>' + '</div>' + '</div>';
+                div.innerHTML = '<div class="blog-post">' + '<span class="post-date" style="display:inline-block; width: 75px;">' + date + '</span> &#8594; <a href="' + href + '" class="post-title">' + title + '</a><span class="text-muted" style="font-size: xx-small !important;"> - ' + categories + '</span></div>' + '</div>';
                 return div;
             }
 
@@ -78,7 +78,13 @@
                         var title = post.title.$t;
                         var href = post.link[4].href;
                         var date = moment(post.published.$t).format("D MMM YYYY");
-                        list.appendChild(template(title, date, href));
+                        var categories =
+                            post.category
+                            .map(function(cat) {
+                                return cat.term;
+                            })
+                            .join(", ");
+                        list.appendChild(template(title, date, href, categories));
                     });
             }
 
