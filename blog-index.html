@@ -7,6 +7,7 @@
     <meta name="description" content="Hey it's me Kimserey Lam! Checkout my app, my lastest blog posts or contact me from my social links :).">
     <link href='https://fonts.googleapis.com/css?family=Roboto|Kaushan+Script' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/269e7d57ca.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/index/favicon.png" />
     <title>Kimserey Lam - Blog index</title>
     <link href="css/index-style.css" rel='stylesheet' type='text/css' />
@@ -22,34 +23,28 @@
             <div class="section">
                 <div class="title">
                     <div class="title-content">F# posts</div>
+                    <div id="fsharp"></div>
                 </div>
-
             </div>
 
             <div class="section">
                 <div class="title">
                     <div class="title-content">Xamarin iOS/Android/Forms posts</div>
+                    <div id="xamarin"></div>
                 </div>
-
-            </div>
-
-            <div class="section">
-                <div class="title">
-                    <div class="title-content">WebSharper posts</div>
-                </div>
-
             </div>
 
             <div class="section">
                 <div class="title">
                     <div class="title-content">Web related posts</div>
+                    <div id="web"></div>
                 </div>
-
             </div>
 
             <div class="section">
                 <div class="title">
                     <div class="title-content">Design posts</div>
+                    <div id="design"></div>
                 </div>
 
             </div>
@@ -57,6 +52,7 @@
             <div class="section">
                 <div class="title">
                     <div class="title-content">Other posts</div>
+                    <div id="other"></div>
                 </div>
 
             </div>
@@ -66,35 +62,40 @@
     </div>
 
     <script>
-        var showposts =
-            (function() {
-                function template(title, description, date, href) {
-                    var div = document.createElement('div');
-                    if (description.length > 50)
-                        description = description.substring(0, 200) + '...';
-                    div.innerHTML = '<div class="blog-post">' + '<a href="' + href + '" class="post-title"> &#8594; ' + title + '</a>' + '<div class="post-description">' + description + " " + '<span class="post-date">' + date + '</span>' + '</div>' + '</div>';
-                    return div;
-                }
+        function sh(id) {
+            function template(title, date, href) {
+                var div = document.createElement('div');
+                div.innerHTML = '<div class="blog-post">' + '<span class="post-date" style="display:inline-block; width: 75px;">' + date + '</span> &#8594; <a href="' + href + '" class="post-title">' + title + '</a>' + '</div>' + '</div>';
+                return div;
+            }
 
-                var list = document.getElementById("latestposts");
+            var list =
+                document.getElementById(id);
 
-                function get(t) {
-                    t.feed.entry
-                        .slice(0, 5)
-                        .forEach(function(post) {
-                            var title = post.title.$t;
-                            var description = post.summary.$t;
-                            var href = post.link[4].href;
-                            var date = moment(post.published.$t).format("D MMM YYYY");
-                            list.appendChild(template(title, description, date, href));
-                        });
-                }
+            function get(t) {
+                t.feed.entry
+                    .forEach(function(post) {
+                        var title = post.title.$t;
+                        var href = post.link[4].href;
+                        var date = moment(post.published.$t).format("D MMM YYYY");
+                        list.appendChild(template(title, date, href));
+                    });
+            }
 
-                return get;
-            })();
+            return get;
+        }
+
+        var f = sh("fsharp"),
+            x = sh("xamarin"),
+            w = sh("web"),
+            d = sh("design"),
+            o = sh("other");
     </script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=showposts"></script>
-
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/F%23/?orderby=published&alt=json-in-script&callback=f"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Xamarin/?orderby=published&alt=json-in-script&callback=x"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Web/?orderby=published&alt=json-in-script&callback=w"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Design/?orderby=published&alt=json-in-script&callback=d"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Other/?orderby=published&alt=json-in-script&callback=o"></script>
 </body>
 
 </html>

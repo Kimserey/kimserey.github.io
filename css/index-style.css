@@ -169,6 +169,7 @@ h1 {
     border: none !important;
     font-size: larger;
     text-align: left;
+    cursor: pointer;
 }
 
 .post-description {
