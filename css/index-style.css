@@ -24,12 +24,12 @@ h1 {
     color: grey;
     display: block;
     font-style: italic;
-    padding: 0 80px;
+    padding: 0 10%;
     text-align: right;
 }
 
 .description {
-    padding: 0 80px;
+    padding: 0 10%;
     text-align: left;
 }
 
