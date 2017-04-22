@@ -22,8 +22,22 @@
         <div class="content">
             <div class="section">
                 <div class="title">
+                    <div class="title-content">C# posts</div>
+                    <div id="csharp"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">
                     <div class="title-content">F# posts</div>
                     <div id="fsharp"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    <div class="title-content">ASP.NET Core posts</div>
+                    <div id="aspnetcore"></div>
                 </div>
             </div>
 
@@ -92,12 +106,16 @@
         }
 
         var f = sh("fsharp"),
+            c = sh("csharp"),
+            a = sh("aspnetcore"),
             x = sh("xamarin"),
             w = sh("web"),
             d = sh("design"),
             o = sh("other");
     </script>
     <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/F%23/?orderby=published&max-results=100&alt=json-in-script&callback=f"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/C%23/?orderby=published&max-results=100&alt=json-in-script&callback=c"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/ASP.NET%20Core/?orderby=published&max-results=100&alt=json-in-script&callback=a"></script>
     <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Xamarin/?orderby=published&max-results=100&alt=json-in-script&callback=x"></script>
     <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Web/?orderby=published&max-results=100&alt=json-in-script&callback=w"></script>
     <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Design/?orderby=published&max-results=100&alt=json-in-script&callback=d"></script>
