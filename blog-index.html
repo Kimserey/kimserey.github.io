@@ -22,60 +22,30 @@
         <div class="content">
             <div class="section">
                 <div class="title">
-                    <div class="title-content">Angular posts</div>
-                    <div id="angular"></div>
+                    <div class="title-content">2018's posts</div>
+                    <div id="2018"></div>
                 </div>
             </div>
 
             <div class="section">
                 <div class="title">
-                    <div class="title-content">C# posts</div>
-                    <div id="csharp"></div>
+                    <div class="title-content">2017's posts</div>
+                    <div id="2017"></div>
                 </div>
             </div>
 
             <div class="section">
                 <div class="title">
-                    <div class="title-content">F# posts</div>
-                    <div id="fsharp"></div>
+                    <div class="title-content">2016's posts</div>
+                    <div id="2016"></div>
                 </div>
             </div>
 
             <div class="section">
                 <div class="title">
-                    <div class="title-content">ASP.NET Core posts</div>
-                    <div id="aspnetcore"></div>
+                    <div class="title-content">2015's posts</div>
+                    <div id="2015"></div>
                 </div>
-            </div>
-
-            <div class="section">
-                <div class="title">
-                    <div class="title-content">Xamarin iOS/Android/Forms posts</div>
-                    <div id="xamarin"></div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="title">
-                    <div class="title-content">Web related posts</div>
-                    <div id="web"></div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="title">
-                    <div class="title-content">Design posts</div>
-                    <div id="design"></div>
-                </div>
-
-            </div>
-
-            <div class="section">
-                <div class="title">
-                    <div class="title-content">Other posts</div>
-                    <div id="other"></div>
-                </div>
-
             </div>
 
             <a href="/" class="back-link"><i class="fa fa-arrow-left"></i>&nbsp; GO BACK TO KIMSEREYLAM.COM</a>
@@ -112,23 +82,15 @@
             return get;
         }
 
-        var ng = sh("angular"),
-            f = sh("fsharp"),
-            c = sh("csharp"),
-            a = sh("aspnetcore"),
-            x = sh("xamarin"),
-            w = sh("web"),
-            d = sh("design"),
-            o = sh("other");
+        var y2018 = sh("2018"),
+            y2017 = sh("2017"),
+            y2016 = sh("2016"),
+            y2015 = sh("2015")
     </script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Angular/?orderby=published&max-results=100&alt=json-in-script&callback=ng"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/F%23/?orderby=published&max-results=100&alt=json-in-script&callback=f"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/C%23/?orderby=published&max-results=100&alt=json-in-script&callback=c"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/ASP.NET%20Core/?orderby=published&max-results=100&alt=json-in-script&callback=a"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Xamarin/?orderby=published&max-results=100&alt=json-in-script&callback=x"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Web/?orderby=published&max-results=100&alt=json-in-script&callback=w"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Design/?orderby=published&max-results=100&alt=json-in-script&callback=d"></script>
-    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default/-/Other/?orderby=published&max-results=100&alt=json-in-script&callback=o"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&max-results=1000&alt=json-in-script&published-min=2018-01-01T00:00:00-00:00&published-max=2019-01-01T00:00:00-00:00&&callback=y2018"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&max-results=1000&alt=json-in-script&published-min=2017-01-01T00:00:00-00:00&published-max=2018-01-01T00:00:00-00:00&&callback=y2017"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&max-results=1000&alt=json-in-script&published-min=2016-01-01T00:00:00-00:00&published-max=2017-01-01T00:00:00-00:00&&callback=y2016"></script>
+    <script src="https://kimsereyblog.blogspot.com/feeds/posts/default?orderby=published&max-results=1000&alt=json-in-script&published-min=2015-01-01T00:00:00-00:00&published-max=2016-01-01T00:00:00-00:00&&callback=y2015"></script>
 </body>
 
 </html>
